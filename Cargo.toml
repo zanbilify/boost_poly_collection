@@ -1,0 +1,24 @@
+[package]
+name = "boost_poly_collection"
+description = "Boost C++ library boost_poly_collection packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_poly_collection"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_poly_collection"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_type_erasure = { version = "0.1.0", path = "../boost_type_erasure" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
